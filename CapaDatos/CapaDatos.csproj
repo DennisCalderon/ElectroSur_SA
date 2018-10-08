@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6069470-27B4-4FB7-B61C-359D8F979F26}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaDatos</RootNamespace>
+    <AssemblyName>CapaDatos</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DacfACFp_Activo_Fijo.cs" />
+    <Compile Include="DAcfACTt_Actividad.cs" />
+    <Compile Include="DAcfAMBt_Ambiente.cs" />
+    <Compile Include="DAcfCMPt_Componente.cs" />
+    <Compile Include="DACFCODNIIF_SistELECTRICO.cs" />
+    <Compile Include="DacfCRPt_Centro_Responsabilidad.cs" />
+    <Compile Include="DacfCRSt_Caracteristicas.cs" />
+    <Compile Include="DacfCSTt_Costo.cs" />
+    <Compile Include="DacfDDFt_detalledediferido.cs" />
+    <Compile Include="DAcfDRTt_detallereparotributario.cs" />
+    <Compile Include="DacfEDIt_edificaciondetalle.cs" />
+    <Compile Include="DacfESTt_Estado.cs" />
+    <Compile Include="DacfGIS_UbicacionElectrica.cs" />
+    <Compile Include="DacfICRt_Inventariocaracteristicas.cs" />
+    <Compile Include="DAcfINBt_Inventariobienes.cs" />
+    <Compile Include="DAcfINVp_Inventario.cs" />
+    <Compile Include="DAcfMARt_Marca.cs" />
+    <Compile Include="DacfMATt_Material.cs" />
+    <Compile Include="DAcfMEQt_maquinariaequipo.cs" />
+    <Compile Include="DAcfMVAt_MovimientoActivo.cs" />
+    <Compile Include="DAcfMVMt_MotivoMovimiento.cs" />
+    <Compile Include="DacfOBJt_Tipo_Objeto.cs" />
+    <Compile Include="DacfPDFt_procesodiferido.cs" />
+    <Compile Include="DAcfRTRt_Reparotributario.cs" />
+    <Compile Include="DacfRVAt_registrovaluacion.cs" />
+    <Compile Include="DAcfSELt_SistemaElectrico.cs" />
+    <Compile Include="DacfSPNt_Supranumero.cs" />
+    <Compile Include="DAcfTMVt_TipoMovimiento.cs" />
+    <Compile Include="DAcfTRNt_terrenodetalle.cs" />
+    <Compile Include="DacfUBEt_UbicacionElectrica.cs" />
+    <Compile Include="DacfUNMt_Unimed.cs" />
+    <Compile Include="DAcfVNRt_VNR.cs" />
+    <Compile Include="DACFVR_IDENT.cs" />
+    <Compile Include="DACF_BajaEvaluacionTecnica.cs" />
+    <Compile Include="DACF_BajaLiquidacionObra.cs" />
+    <Compile Include="Dacf_BajaTension.cs" />
+    <Compile Include="DACF_FACTTRANSFORMADORES.cs" />
+    <Compile Include="DACF_MEDIATENSION.cs" />
+    <Compile Include="DACF_TransferenciaDonacion.cs" />
+    <Compile Include="DACF_ValorResidual.cs" />
+    <Compile Include="DACF_ValorResidualNiff.cs" />
+    <Compile Include="DACF_Valuacion.cs" />
+    <Compile Include="DACF_VIDAUTILTASADA.cs" />
+    <Compile Include="DAFNo_Capitalizables.cs" />
+    <Compile Include="DbdiCAFpClaseDeActivoFijo.cs" />
+    <Compile Include="DBdiCDDpClasesDeDocumento.cs" />
+    <Compile Include="DbdiPRVpProveedor.cs" />
+    <Compile Include="DBdiSEGpSegmento.cs" />
+    <Compile Include="DbdiSOCpSociedades.cs" />
+    <Compile Include="DBdiXCCpExtraccionSAP_CentroCosto.cs" />
+    <Compile Include="DbdiXPEpExtraccionSAP_Personal.cs" />
+    <Compile Include="DConexion.cs" />
+    <Compile Include="DACFLOCT_LOCAL.cs" />
+    <Compile Include="DDacfLOCt_Local.cs" />
+    <Compile Include="DGIS_AFintermedia.cs" />
+    <Compile Include="DMovimiento_Transferencia_Activo.cs" />
+    <Compile Include="DPostres.cs" />
+    <Compile Include="D_PRMVAR.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prueba.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
